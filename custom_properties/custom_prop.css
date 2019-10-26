@@ -1,0 +1,15 @@
+.box {
+    --color-primary: yellow;
+    width: 50vw;
+    height: 50vh;
+    transition: --color-primary 1s ease;
+    /* background: linear-gradient(var(--color-primary), deeppink); */
+
+    background: linear-gradient(var(--color-primary), darkblue)
+  }
+  
+  .box:hover {
+    /* background: linear-gradient(orange, blue) */
+    --color-primary: orange;
+  }
+

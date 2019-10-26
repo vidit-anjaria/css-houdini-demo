@@ -1,0 +1,116 @@
+.paint {
+    width: 800px;
+    height: 600px;
+    border: 1px solid;
+    background-image: paint(checkerboard);
+  }
+
+  .rough-box {
+    background: var(--rough-fill);
+    border: var(--rough-stroke-width) solid var(--rough-stroke);
+    --rough-fill: #0081ff;
+    --rough-stroke: black;
+    --rough-stroke-width: 10px;
+    --rough-roughness: 9.4;
+  }
+  /* .el:nth-child(2) {
+    --rough-fill: #8100ff;
+  } */
+  @supports (border-image-source: paint(rough-boxes)) {
+    .rough-box {
+      border-image-source: paint(rough-boxes);
+      border-image-slice: 0 fill;
+      border-image-outset: 10px;
+      background: none;
+    }
+  }
+
+  .tooltip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: #fff;
+    height: 150px;
+    width: 200px;
+    margin: 50px auto;
+    border-radius: 10px;
+    background: hsl(193, 100%, 30%);
+    /* border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent; */
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-image-source: paint(tooltip);
+    border-image-width: var(--border-width);
+    border-image-outset: var(--border-width);
+    border-image-slice: 100% 0 0 0;
+    --tooltip-position: 50%;
+    --tooltip-size: 30px;
+    --border-width: 20px;
+    --tooltip-placement: top;
+  }
+
+  .checkbox {
+    margin-right: 24px;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+    border: 3px solid grey;
+    -webkit-appearance: none;
+    background-image: paint(checkbox);
+    --checkbox-color: transparent;
+    --edge: 15;
+  }
+  .checkbox:hover {
+    --checkbox-color: grey;
+  }
+  .checkbox:checked {
+    --checkbox-color: black;
+    background-color: #dd0301;
+  }
+
+  /* .checkbox-label {
+    font-size: 2rem;
+    vertical-align: middle;
+    color: #68388e;
+  }
+  
+  .checkbox-wrapper {
+    margin-bottom: 16px;
+  }
+  
+  .checkbox {
+    --edge: 10;
+    transition: --checkbox-color 500ms, background-color 500ms;
+  }
+  
+  
+  .checkbox:hover {
+    --checkbox-color: grey;
+  }
+  
+  .checkbox:checked {
+    --checkbox-color: black;
+    background-color: #dd0301;
+  }
+  
+  .checkbox {
+    -webkit-appearance: none;
+    background-image: paint(checkbox);
+    --checkbox-color: transparent;
+    --padding: 5;
+    margin-right: 24px;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+    border: 3px solid grey;
+    transition: --checkbox-color 500ms, background-color 500ms;
+  } */
+
+
+
+    /* .checkbox:checked + label > .checkbox-label {
+    color: #grey;
+  } */

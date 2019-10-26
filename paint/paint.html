@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paint API</title>
+    <link rel="stylesheet" type="text/css" href="paint.css">
+    
+</head>
+<body>
+    <!-- <div class="paint"></div> -->
+    <!-- <div class="rough-box"></div> -->
+
+    <div class="tooltip"></div>
+
+    <div class="checkbox-wrapper">
+        <input type="checkbox" class="checkbox">
+        <label> <span class="checkbox-label">Checkbox 1</span></label>
+    </div>
+    
+    <script type="module">
+        CSS.registerProperty({
+            name: '--checkbox-color',
+            syntax: '<color>',
+            inherits: false,
+            initialValue: transparent
+        })
+    </script>
+    <script src="js/paint.js"></script>
+</body>
+</html>
