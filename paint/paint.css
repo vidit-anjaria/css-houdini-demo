@@ -43,11 +43,11 @@
     border-image-source: paint(tooltip);
     border-image-width: var(--border-width);
     border-image-outset: var(--border-width);
-    border-image-slice: 100% 0 0 0;
+    border-image-slice: 0 100% 0 0;
     --tooltip-position: 50%;
     --tooltip-size: 30px;
     --border-width: 20px;
-    --tooltip-placement: top;
+    --tooltip-placement: right;
   }
 
   .checkbox {
@@ -60,14 +60,14 @@
     -webkit-appearance: none;
     background-image: paint(checkbox);
     --checkbox-color: transparent;
-    --edge: 15;
+    --edge: 10;
   }
   .checkbox:hover {
     --checkbox-color: grey;
   }
   .checkbox:checked {
     --checkbox-color: black;
-    background-color: #dd0301;
+    background-color: darkgrey;
   }
 
   /* .checkbox-label {

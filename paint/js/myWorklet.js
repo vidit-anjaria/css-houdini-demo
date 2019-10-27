@@ -109,18 +109,27 @@ registerPaint('tooltip', class Bubble {
 // Chebox
 registerPaint('checkbox', class check {
   static get inputProperties() {
-    return ['--checkbox-color', '--edge'];
+    return ['--checkbox-color'];
+    // return ['--checkbox-color', '--edge'];
   }
 
   paint(ctx, size, props) {
     const color = props.get('--checkbox-color');
-    const edge = props.get('--edge');
-    const x = edge;
-    const y = edge;
-    const finalX = size.width - edge;
-    const finalY = size.height - edge;
+
+    const x = 0;
+    const y = 0;
+    const finalX = size.width;
+    const finalY = size.height;
+
+
+    // const edge = props.get('--edge');
+    // const x = edge;
+    // const y = edge;
+    // const finalX = size.width - edge;
+    // const finalY = size.height - edge;
+
     ctx.lineWidth = 4;
-    ctx.strokeStyle = color.toString();
+    // ctx.strokeStyle = color.toString();
 
     // top left to bottom right
     ctx.beginPath()
