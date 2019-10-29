@@ -1,29 +1,16 @@
-/* .box {
-  --color-primary: yellow;
-  width: 50vw;
-  height: 50vh;
-  transition: --color-primary 1s ease;
-  background: linear-gradient(var(--color-primary), grey)
-}
-
-.box:hover {
-  --color-primary: orange;
-} */
-
-
 .box {
   width: 50vw;
   height: 50vh
 }
 
 /* Only bakground Gradient */
-.box {
+/* .box {
   transition: all 1s ease; 
   background: linear-gradient(yellow, darkblue);
 }
 .box:hover {
   background: linear-gradient(orange, darkblue);
-}
+} */
 
 /* Background Gradient with Variables */
 /* .box {
@@ -37,7 +24,7 @@
 } */
 
 /* Animated gradient with Propertis and Values API */
-/* .box {
+.box {
   --color-primary: yellow;
   transition: --color-primary 1s ease;
   background: linear-gradient(var(--color-primary), #333)
@@ -45,6 +32,6 @@
 
 .box:hover {
   --color-primary: orange;
-} */
+}
 
 
